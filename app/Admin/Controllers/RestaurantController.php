@@ -85,6 +85,7 @@ class RestaurantController extends Controller
         $grid->name('Name');
         $grid->image('Image');
         $grid->text('Text');
+        $grid->text('cordinata');
         $grid->created_at('Created at');
         $grid->updated_at('Updated at');
 
@@ -105,6 +106,8 @@ class RestaurantController extends Controller
         $show->name('Name');
         $show->image('Image');
         $show->text('Text');
+        $show->text('cordinata');
+
         $show->created_at('Created at');
         $show->updated_at('Updated at');
 
@@ -121,6 +124,7 @@ class RestaurantController extends Controller
         $form = new Form(new Restaurant);
 
         $form->text('name', 'Name');
+        $form->text('cordinata','Cordinata');
         $form->image('image', 'Image');
         $form->textarea('text', 'Text');
 

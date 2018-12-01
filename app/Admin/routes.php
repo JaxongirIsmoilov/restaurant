@@ -15,7 +15,7 @@ Route::group([
 ], function (Router $router) {
 
     $router->get('/', 'HomeController@index');
-//    $router->resource('demo/restaurants',RestaurantController::class);
+
     $router->resource('demo/restaurants',\RestaurantController::class);
 
 });
