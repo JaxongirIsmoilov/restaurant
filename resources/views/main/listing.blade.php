@@ -227,7 +227,7 @@
             <div class="row">
                 <div class="col-md-12 responsive-wrap map-wrap">
 
-                    <div id="mapid" style="width: 1440px; height: 800px;"></div>
+                    <div id="mapid" style="width: 1293px; height: 800px;"></div>
                 </div>
 
             </div>
