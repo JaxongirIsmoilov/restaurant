@@ -4,7 +4,7 @@
     <section>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-7 responsive-wrap">
+                <div class="col-md-12 responsive-wrap">
                     <div class="row detail-filter-wrap">
                         <div class="col-md-4 featured-responsive">
                             <div class="detail-filter-text">
@@ -223,10 +223,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 responsive-wrap map-wrap">
+            </div>
+            <div class="row">
+                <div class="col-md-12 responsive-wrap map-wrap">
 
-                        <div id="mapid" style="width: 600px; height: 800px;"></div>
+                    <div id="mapid" style="width: 1440px; height: 800px;"></div>
                 </div>
+
             </div>
         </div>
     </section>
