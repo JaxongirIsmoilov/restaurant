@@ -181,7 +181,7 @@
 
                                         </ul>
                                         <div class="bottom-icons">
-                                            <div class="closed-now">CLOSE NOW</div>
+                                            <div class="closed-now">CLOSEdd NOW</div>
                                             <span class="ti-heart"></span>
                                             <span class="ti-bookmark"></span>
                                         </div>
