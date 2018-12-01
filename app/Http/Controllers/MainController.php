@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Restaurant;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
@@ -10,8 +11,14 @@ class MainController extends Controller
         return view('main.index');
     }
     public function listing(){
-        return view('main.listing');
+        $restaurants=Restaurant::all();
+
+        return view('main.listing',compact('restaurants'));
     }
+
+    public function pageShow($id){
+        $restaurants = Restaurant::findOrFail($id);
+}
 public function detail(){
         return view('main.detail');
 }

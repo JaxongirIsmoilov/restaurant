@@ -81,11 +81,11 @@ class RestaurantController extends Controller
     {
         $grid = new Grid(new Restaurant);
 
-        $grid->id('Id');
-        $grid->name('Name');
-        $grid->image('Image');
-        $grid->text('Text');
-        $grid->text('cordinata');
+        $grid->id('id');
+        $grid->name('name');
+        $grid->image('image');
+        $grid->text('text');
+        $grid->cordinata('cordinata');
         $grid->created_at('Created at');
         $grid->updated_at('Updated at');
 
@@ -102,11 +102,12 @@ class RestaurantController extends Controller
     {
         $show = new Show(Restaurant::findOrFail($id));
 
-        $show->id('Id');
-        $show->name('Name');
-        $show->image('Image');
-        $show->text('Text');
+        $show->id('id');
+        $show->name('name');
+        $show->image('image');
+//        $show->text('text');
         $show->text('cordinata');
+
 
         $show->created_at('Created at');
         $show->updated_at('Updated at');
@@ -124,8 +125,8 @@ class RestaurantController extends Controller
         $form = new Form(new Restaurant);
 
         $form->text('name', 'Name');
-        $form->text('cordinata','Cordinata');
         $form->image('image', 'Image');
+        $form->text('cordinata','Cordinata');
         $form->textarea('text', 'Text');
 
         return $form;

@@ -1,9 +1,10 @@
 @extends('main.layout')
+
 @section('content')
     <section>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12 responsive-wrap">
+                <div class="col-md-7 responsive-wrap">
                     <div class="row detail-filter-wrap">
                         <div class="col-md-4 featured-responsive">
                             <div class="detail-filter-text">
@@ -97,7 +98,7 @@
                     <div class="row light-bg detail-options-wrap">
                         <div class="col-sm-6 col-lg-12 col-xl-6 featured-responsive">
                             <div class="featured-place-wrap">
-                                <a href="detail.html">
+                                <a href="/detail">
                                     <img src="images/featured1.jpg" class="img-fluid" alt="#">
                                     <span class="featured-rating-orange ">6.5</span>
                                     <div class="featured-title-box">
@@ -107,7 +108,7 @@
                                         <p><span>$$$</span>$$</p>
                                         <ul>
                                             <li><span class="icon-location-pin"></span>
-                                                <p>1301 Avenue, Brooklyn, NY 11230</p>
+                                                <p>1301 Avenue, Ziyolilar, NY 11230</p>
                                             </li>
                                             <li><span class="icon-screen-smartphone"></span>
                                                 <p>+44 20 7336 8898</p>
@@ -138,7 +139,7 @@
                                         <p><span>$$$</span>$$</p>
                                         <ul>
                                             <li><span class="icon-location-pin"></span>
-                                                <p>1301 Avenue, Brooklyn, NY 11230</p>
+                                                <p>1301 Avenue, Ziyolilar, NY 11230</p>
                                             </li>
                                             <li><span class="icon-screen-smartphone"></span>
                                                 <p>+44 20 7336 8898</p>
@@ -160,7 +161,7 @@
 
                         <div class="col-sm-6 col-lg-12 col-xl-6 featured-responsive">
                             <div class="featured-place-wrap">
-                                <a href="detail.html">
+                                <a href="/detail">
                                     <img src="images/featured3.jpg" class="img-fluid" alt="#">
                                     <span class="featured-rating">3.2</span>
                                     <div class="featured-title-box">
@@ -170,7 +171,7 @@
                                         <p><span>$$$</span>$$</p>
                                         <ul>
                                             <li><span class="icon-location-pin"></span>
-                                                <p>1301 Avenue, Brooklyn, NY 11230</p>
+                                                <p>1301 Avenue, Ziyolilar, NY 11230</p>
                                             </li>
                                             <li><span class="icon-screen-smartphone"></span>
                                                 <p>+44 20 7336 8898</p>
@@ -213,7 +214,7 @@
                                         </ul>
                                         <div class="bottom-icons">
                                             <div class="closed-now">CLOSED NOW</div>
-                                             <span class="ti-heart"></span>
+                                            <span class="ti-heart"></span>
                                             <span class="ti-bookmark"></span>
                                         </div>
                                     </div>
@@ -222,10 +223,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 responsive-wrap map-wrap">
-                    <div id="mapid" style="width: 1440px; height: 800px;"></div>
+                <div class="col-md-5 responsive-wrap map-wrap">
+
+                        <div id="mapid" style="width: 600px; height: 800px;"></div>
                 </div>
             </div>
         </div>
