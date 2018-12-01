@@ -91,7 +91,7 @@
 
 <script>
 
-    var mymap = L.map('mapid').setView([41.309604, 69.241050], 13);
+    var mymap = L.map('mapid').setView([41.36049879999999,69.28982799999994], 11);
 
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
         maxZoom: 18,
@@ -101,9 +101,9 @@
         id: 'mapbox.streets'
     }).addTo(mymap);
 
-//    L.marker([51.5, -0.09],[41.299496,69.240073]).addTo(mymap);
+
 @foreach($restaurants as $r)
-    L.marker([{{$r->cordinata}}]).addTo(mymap);
+    L.marker([{{$r->cordinata}}]).bindPopup("I am a green leaf.").addTo(mymap);
 
     L.circle([{{$r->cordinata}}], {
         color: 'red',
@@ -116,6 +116,7 @@
         [{{$r->cordinata}}],
 
     ]).addTo(mymap);
+
 
     @endforeach
 </script>
