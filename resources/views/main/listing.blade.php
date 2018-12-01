@@ -3,7 +3,7 @@
     <section>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-7 responsive-wrap">
+                <div class="col-md-12 responsive-wrap">
                     <div class="row detail-filter-wrap">
                         <div class="col-md-4 featured-responsive">
                             <div class="detail-filter-text">
@@ -213,7 +213,7 @@
                                         </ul>
                                         <div class="bottom-icons">
                                             <div class="closed-now">CLOSED NOW</div>
-                                            <span class="ti-heart"></span>
+                                             <span class="ti-heart"></span>
                                             <span class="ti-bookmark"></span>
                                         </div>
                                     </div>
@@ -222,9 +222,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 responsive-wrap map-wrap">
-
-                    <div id="mapid" style="width: 600px; height: 400px;"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 responsive-wrap map-wrap">
+                    <div id="mapid" style="width: 1440px; height: 800px;"></div>
                 </div>
             </div>
         </div>

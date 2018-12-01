@@ -91,10 +91,10 @@
 
 <script>
 
-    var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+    var mymap = L.map('mapid').setView([41.309604, 69.241050], 13);
 
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-        maxZoom: 18,
+        maxZoom: 15,
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
         '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
         'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -103,8 +103,8 @@
 
 //    L.marker([51.5, -0.09],[41.299496,69.240073]).addTo(mymap);
     L.marker([41.299496,69.240073]).addTo(mymap);
-
-    L.circle([51.508, -0.11], {
+    L.marker([]);
+    /*L.circle([51.508, -0.11], {
         color: 'red',
         fillColor: '#f03',
         fillOpacity: 0.5,
@@ -116,6 +116,29 @@
         [51.503, -0.06],
         [51.51, -0.047]
     ]).addTo(mymap);
+*/
+    /*var myIcon = L.icon({
+        iconUrl: 'my-icon.png',
+        iconSize: [38, 95],
+        iconAnchor: [22, 94],
+        popupAnchor: [-3, -76],
+        shadowUrl: '.png',
+        shadowSize: [68, 95],
+        shadowAnchor: [22, 94]
+    });
+    L.marker([50.505, 30.57],{popup: popup}, {icon: myIcon}).addTo(map);*/
+/*
+    marker.bindPopup(popupContent).openPopup();
+
+
+    var popup = L.popup()
+        .setLatLng(latlng)
+        .setContent('<p>Hello world!<br />This is a nice popup.</p>')
+        .openOn(map);*/
+
+//L.popup({maxWidth:})
+
+
 
 
 </script>
