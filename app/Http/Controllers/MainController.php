@@ -8,7 +8,8 @@ use Illuminate\Http\Request;
 class MainController extends Controller
 {
     public function index(){
-        return view('main.index');
+        $restaurants=Restaurant::all();
+        return view('main.index',compact('restaurants'));
     }
     public function listing(){
         $restaurants=Restaurant::all();
@@ -20,6 +21,7 @@ class MainController extends Controller
         $restaurants = Restaurant::findOrFail($id);
 }
 public function detail(){
-        return view('main.detail');
+    $restaurants=Restaurant::all();
+        return view('main.detail',compact('restaurants'));
 }
 }

@@ -103,7 +103,10 @@
 
 
 @foreach($restaurants as $r)
-    L.marker([{{$r->cordinata}}]).bindPopup("I am a green leaf.").addTo(mymap);
+
+    L.marker([{{$r->cordinata}}]).bindPopup('{!! $r->text  !!} <a href="/detail" class="btn btn-block btn-xs btn-success">com here baby</a>').addTo(mymap);
+
+
 
     L.circle([{{$r->cordinata}}], {
         color: 'red',
@@ -117,6 +120,15 @@
 
     ]).addTo(mymap);
 
+
+//    function onMapClick(e) {
+//        popup
+//            .setLatLng(e.latlng)
+//            .setContent(e.latlng.toString() + '<a href="/detail">Visit Google</a>"')
+//            .openOn(map);
+//    }
+//
+//    map.on('click', onMapClick);
 
     @endforeach
 </script>

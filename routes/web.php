@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 Route::get('/','MainController@index')->name('home');
 Route::get('/listing','MainController@listing')->name('listing');
-Route::get('/listing','MainController@listing')->name('listing');
+//Route::get('/listing','MainController@listing')->name('listing');
 Route::get('/detail','MainController@detail')->name('detail');
