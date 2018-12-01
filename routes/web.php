@@ -11,9 +11,31 @@
 |
 */
 
+
+
 Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/','MainController@index')->name('home');
 Route::get('/listing','MainController@listing')->name('listing');
 Route::get('/detail','MainController@detail')->name('detail');
+
+
+Auth::routes();
+Route::get('/login/facebook', 'Auth\LoginController@redirectToFacebookProvider');
+
+Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderFacebookCallback');
+
+Route::group(['middleware' => ['auth']], function(){
+    Route::get('/user', 'GraphController@retrieveUserProfile');
+});
+
+Route::group(['middleware' => ['auth']], function(){
+
+    Route::get('/user', 'GraphController@retrieveUserProfile');
+
+    Route::post('/user', 'GraphController@publishToProfile');
+
+});
+
+Route::get('/home', 'HomeController@index')->name('home');
