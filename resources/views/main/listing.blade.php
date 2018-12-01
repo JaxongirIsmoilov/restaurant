@@ -223,7 +223,8 @@
                     </div>
                 </div>
                 <div class="col-md-5 responsive-wrap map-wrap">
-                    <div id="mapid"></div>
+
+                    <div id="mapid" style="width: 600px; height: 400px;"></div>
                 </div>
             </div>
         </div>
