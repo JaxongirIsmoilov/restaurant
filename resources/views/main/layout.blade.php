@@ -102,7 +102,7 @@
     }).addTo(mymap);
 
 
-@foreach($restaurants as $r)
+    @foreach($restaurants as $r)
 
     L.marker([{{$r->cordinata}}]).bindPopup('{!! $r->text  !!} <a href="{{route('restaurants.view',['id'=>$r->id])}}" class="btn btn-block btn-xs btn-success">com here baby</a>').addTo(mymap);
 
@@ -121,14 +121,14 @@
     ]).addTo(mymap);
 
 
-//    function onMapClick(e) {
-//        popup
-//            .setLatLng(e.latlng)
-//            .setContent(e.latlng.toString() + '<a href="/detail">Visit Google</a>"')
-//            .openOn(map);
-//    }
-//
-//    map.on('click', onMapClick);
+    //    function onMapClick(e) {
+    //        popup
+    //            .setLatLng(e.latlng)
+    //            .setContent(e.latlng.toString() + '<a href="/detail">Visit Google</a>"')
+    //            .openOn(map);
+    //    }
+    //
+    //    map.on('click', onMapClick);
 
     @endforeach
 </script>
