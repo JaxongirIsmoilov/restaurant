@@ -92,7 +92,7 @@
                             <div class="customer-content-wrap">
                                 <div class="customer-content">
                                     <div class="customer-review">
-                                        <h6>Best noodles in the Newyork city</h6>
+                                        <h6>{!! $restaurants->name !!}</h6>
                                         <span></span>
                                         <span></span>
                                         <span></span>
@@ -147,10 +147,10 @@
                         </div>
                     </div>
                 </div>
-                @foreach($restaurants as $r)
+
                 <div class="col-md-4 responsive-wrap">
                     <div class="contact-info">
-                        <div id="mapid" style="width: 600px; height: 800px;"></div>
+                        {{--<div id="mapid" style="width: 600px; height: 800px;"></div>--}}
                         <div class="address">
                             <span class="icon-location-pin"></span>
                             <p> Doyers St<br> New York, NY 10013<br> b/t Division St & St James Pl <br> Chinatown, Civic Center</p>
@@ -195,7 +195,7 @@
                 </div>
 
             </div>
-            @endforeach
+
         </div>
     </section>
 
