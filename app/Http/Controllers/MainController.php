@@ -24,4 +24,10 @@ public function detail(){
     $restaurants=Restaurant::all();
         return view('main.detail',compact('restaurants'));
 }
+
+public function cafeView($id){
+    $restaurants = Restaurant::findOrFail($id);
+    return view('main.cafe_view',compact('restaurants'));
+
+}
 }

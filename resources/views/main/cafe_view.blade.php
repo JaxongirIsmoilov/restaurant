@@ -1,64 +1,11 @@
 @extends('main.layout')
-@section('main.header')
-    <div>
-    <!-- Swiper -->
-    <div class="swiper-container">
-    <div class="swiper-wrapper">
-
-    <div class="swiper-slide">
-    <a href="images/reserve-slide2.jpg" class="grid image-link">
-    <img src="images/reserve-slide2.jpg" class="img-fluid" alt="#">
-    </a>
-    </div>
-    <div class="swiper-slide">
-    <a href="images/reserve-slide1.jpg" class="grid image-link">
-    <img src="images/reserve-slide1.jpg" class="img-fluid" alt="#">
-    </a>
-    </div>
-    <div class="swiper-slide">
-    <a href="images/reserve-slide3.jpg" class="grid image-link">
-    <img src="images/reserve-slide3.jpg" class="img-fluid" alt="#">
-    </a>
-    </div>
-    <div class="swiper-slide">
-    <a href="images/reserve-slide1.jpg" class="grid image-link">
-    <img src="images/reserve-slide1.jpg" class="img-fluid" alt="#">
-    </a>
-    </div>
-    <div class="swiper-slide">
-    <a href="images/reserve-slide2.jpg" class="grid image-link">
-    <img src="images/reserve-slide2.jpg" class="img-fluid" alt="#">
-    </a>
-    </div>
-    <div class="swiper-slide">
-    <a href="images/reserve-slide3.jpg" class="grid image-link">
-    <img src="images/reserve-slide3.jpg" class="img-fluid" alt="#">
-    </a>
-    </div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination swiper-pagination-white"></div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next swiper-button-white"></div>
-    <div class="swiper-button-prev swiper-button-white"></div>
-    </div>
-    </div>
-
-
-
-
-@endsection
 @section('content')
-
-
-    {{--<!--//END BOOKING -->--}}
-    <!--============================= RESERVE A SEAT =============================-->
     <section class="reserve-block">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-
-                    <h5>Tasty Hand-Pulled Noodles</h5>
+@foreach($restaurants as $r )
+                    <h5>{!! $r->name !!}</h5>
                     <p><span>$$$</span>$$</p>
                     <p class="reserve-description">Innovative cooking, paired with fine wines in a modern setting.</p>
                 </div>
@@ -81,6 +28,7 @@
             </div>
         </div>
     </section>
+    @endforeach
     <!--//END RESERVE A SEAT -->
     <!--============================= BOOKING DETAILS =============================-->
     <section class="light-bg booking-details_wrap">
@@ -199,6 +147,7 @@
                         </div>
                     </div>
                 </div>
+                @foreach($restaurants as $r)
                 <div class="col-md-4 responsive-wrap">
                     <div class="contact-info">
                         <div id="mapid" style="width: 600px; height: 800px;"></div>
@@ -244,7 +193,9 @@
                         <a href="#">FOLLOW</a>
                     </div>
                 </div>
+
             </div>
+            @endforeach
         </div>
     </section>
 

@@ -17,4 +17,5 @@ Route::get('/', function () {
 Route::get('/','MainController@index')->name('home');
 Route::get('/listing','MainController@listing')->name('listing');
 //Route::get('/listing','MainController@listing')->name('listing');
+Route::get('/cafes/{id}','MainController@cafeView')->name('restaurants.view');
 Route::get('/detail','MainController@detail')->name('detail');

@@ -104,7 +104,7 @@
 
 @foreach($restaurants as $r)
 
-    L.marker([{{$r->cordinata}}]).bindPopup('{!! $r->text  !!} <a href="/detail" class="btn btn-block btn-xs btn-success">com here baby</a>').addTo(mymap);
+    L.marker([{{$r->cordinata}}]).bindPopup('{!! $r->text  !!} <a href="{{route('restaurants.view',['id'=>$r->id])}}" class="btn btn-block btn-xs btn-success">com here baby</a>').addTo(mymap);
 
 
 
